@@ -1,0 +1,384 @@
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int v;(v=4;(while(v > 0) { (print(v);v=v-1) };print(v))))]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(v=4;(while(v > 0) { (print(v);v=v-1) };print(v))), int v]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(v=4;(while(v > 0) { (print(v);v=v-1) };print(v)))]
+----------
+* symbolTable: 
+{v=0}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(while(v > 0) { (print(v);v=v-1) };print(v)), v=4]
+----------
+* symbolTable: 
+{v=0}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(while(v > 0) { (print(v);v=v-1) };print(v))]
+----------
+* symbolTable: 
+{v=4}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }]
+----------
+* symbolTable: 
+{v=4}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, (print(v);v=v-1)]
+----------
+* symbolTable: 
+{v=4}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1, print(v)]
+----------
+* symbolTable: 
+{v=4}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1]
+----------
+* symbolTable: 
+{v=4}
+----------
+* out: [4]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }]
+----------
+* symbolTable: 
+{v=3}
+----------
+* out: [4]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, (print(v);v=v-1)]
+----------
+* symbolTable: 
+{v=3}
+----------
+* out: [4]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1, print(v)]
+----------
+* symbolTable: 
+{v=3}
+----------
+* out: [4]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1]
+----------
+* symbolTable: 
+{v=3}
+----------
+* out: [4, 3]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }]
+----------
+* symbolTable: 
+{v=2}
+----------
+* out: [4, 3]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, (print(v);v=v-1)]
+----------
+* symbolTable: 
+{v=2}
+----------
+* out: [4, 3]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1, print(v)]
+----------
+* symbolTable: 
+{v=2}
+----------
+* out: [4, 3]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1]
+----------
+* symbolTable: 
+{v=2}
+----------
+* out: [4, 3, 2]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }]
+----------
+* symbolTable: 
+{v=1}
+----------
+* out: [4, 3, 2]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, (print(v);v=v-1)]
+----------
+* symbolTable: 
+{v=1}
+----------
+* out: [4, 3, 2]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1, print(v)]
+----------
+* symbolTable: 
+{v=1}
+----------
+* out: [4, 3, 2]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }, v=v-1]
+----------
+* symbolTable: 
+{v=1}
+----------
+* out: [4, 3, 2, 1]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v), while(v > 0) { (print(v);v=v-1) }]
+----------
+* symbolTable: 
+{v=0}
+----------
+* out: [4, 3, 2, 1]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(v)]
+----------
+* symbolTable: 
+{v=0}
+----------
+* out: [4, 3, 2, 1]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[]
+----------
+* symbolTable: 
+{v=0}
+----------
+* out: [4, 3, 2, 1, 0]
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+

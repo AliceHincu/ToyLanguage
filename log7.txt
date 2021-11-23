@@ -1,0 +1,160 @@
+>>> ProgramState: 
+----------
+* exeStack: 
+[(Ref(int) v;(new(v,20);(print(readHeap(v));(writeHeap(v, 30);print(readHeap(v)+5)))))]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(new(v,20);(print(readHeap(v));(writeHeap(v, 30);print(readHeap(v)+5)))), Ref(int) v]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(new(v,20);(print(readHeap(v));(writeHeap(v, 30);print(readHeap(v)+5))))]
+----------
+* symbolTable: 
+{v=(0, int)}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(readHeap(v));(writeHeap(v, 30);print(readHeap(v)+5))), new(v,20)]
+----------
+* symbolTable: 
+{v=(0, int)}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(readHeap(v));(writeHeap(v, 30);print(readHeap(v)+5)))]
+----------
+* symbolTable: 
+{v=(1, int)}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {1=20}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(writeHeap(v, 30);print(readHeap(v)+5)), print(readHeap(v))]
+----------
+* symbolTable: 
+{v=(1, int)}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+* heap: {1=20}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(writeHeap(v, 30);print(readHeap(v)+5))]
+----------
+* symbolTable: 
+{v=(1, int)}
+----------
+* out: [20]
+----------
+* fileTable={}
+----------
+* heap: {1=20}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(readHeap(v)+5), writeHeap(v, 30)]
+----------
+* symbolTable: 
+{v=(1, int)}
+----------
+* out: [20]
+----------
+* fileTable={}
+----------
+* heap: {1=20}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[print(readHeap(v)+5)]
+----------
+* symbolTable: 
+{v=(1, int)}
+----------
+* out: [20]
+----------
+* fileTable={}
+----------
+* heap: {1=30}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[]
+----------
+* symbolTable: 
+{v=(1, int)}
+----------
+* out: [20, 35]
+----------
+* fileTable={}
+----------
+* heap: {1=30}
+----------
+
+

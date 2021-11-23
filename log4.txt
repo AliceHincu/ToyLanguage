@@ -1,0 +1,756 @@
+>>> ProgramState: 
+----------
+* exeStack: 
+[(string varf;(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))))]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))), string varf]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))))]
+----------
+* symbolTable: 
+{varf=EMPTY STRING}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))), varf=test.in]
+----------
+* symbolTable: 
+{varf=EMPTY STRING}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))), open(varf)]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))), int varc]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))]
+----------
+* symbolTable: 
+{varf=test.in, varc=0}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))), readFile(varf, varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=0}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);closeReadFile(varf))), print(varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);closeReadFile(varf)))]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);closeReadFile(varf)), readFile(varf, varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);closeReadFile(varf))]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[closeReadFile(varf), print(varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[closeReadFile(varf)]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15, 50]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15, 50]
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(string varf;(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))))]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))), string varf]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))))]
+----------
+* symbolTable: 
+{varf=EMPTY STRING}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))), varf=test.in]
+----------
+* symbolTable: 
+{varf=EMPTY STRING}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))), open(varf)]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))), int varc]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))]
+----------
+* symbolTable: 
+{varf=test.in, varc=0}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))), readFile(varf, varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=0}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);closeReadFile(varf))), print(varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);closeReadFile(varf)))]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);closeReadFile(varf)), readFile(varf, varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);closeReadFile(varf))]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[closeReadFile(varf), print(varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[closeReadFile(varf)]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15, 50]
+----------
+* fileTable={test.in=java.io.BufferedReader@41cf53f9}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15, 50]
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(string varf;(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))))]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))), string varf]
+----------
+* symbolTable: 
+{}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(varf=test.in;(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))))]
+----------
+* symbolTable: 
+{varf=EMPTY STRING}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))), varf=test.in]
+----------
+* symbolTable: 
+{varf=EMPTY STRING}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(open(varf);(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))))]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))), open(varf)]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(int varc;(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))))]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))), int varc]
+----------
+* symbolTable: 
+{varf=test.in}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))))]
+----------
+* symbolTable: 
+{varf=test.in, varc=0}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf)))), readFile(varf, varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=0}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);(readFile(varf, varc);(print(varc);closeReadFile(varf))))]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);closeReadFile(varf))), print(varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: []
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(readFile(varf, varc);(print(varc);closeReadFile(varf)))]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);closeReadFile(varf)), readFile(varf, varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=15}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[(print(varc);closeReadFile(varf))]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[closeReadFile(varf), print(varc)]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15]
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[closeReadFile(varf)]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15, 50]
+----------
+* fileTable={test.in=java.io.BufferedReader@4459eb14}
+----------
+
+
+>>> ProgramState: 
+----------
+* exeStack: 
+[]
+----------
+* symbolTable: 
+{varf=test.in, varc=50}
+----------
+* out: [15, 50]
+----------
+* fileTable={}
+----------
+
+
